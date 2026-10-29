@@ -198,7 +198,7 @@ public let mossPlugin = GaeaPluginDefinition(
     version: "0.1.0",
     minGaea: "0.2.0",
     team: "CFZS6RXUCP",
-    repo: "https://github.com/xocialize/gaea-plugin-moss-image",
+    repo: "https://github.com/xocialize-code/gaea-plugin-moss-image",
     title: "MOSS-Image",
     summary: "OpenMOSS's MOSS-Image (Apache-2.0): a 5B single-stream DiT on a Qwen3.5-9B encoder and the FLUX.2 small "
         + "decoder. Text-to-image with long English and Chinese text and JSON layout prompts (SFT), and the pretrained "

@@ -1,13 +1,13 @@
 # gaea-plugin-moss-image
 
 OpenMOSS's **MOSS-Image** (a 5B single-stream DiT on a Qwen3.5-9B text encoder and the FLUX.2 small decoder,
-Apache-2.0) as a [Gaea](https://github.com/xocialize/gaea) research plugin. It is built on
-[GaeaPluginKit](https://github.com/xocialize/gaea-plugin-kit) over
+Apache-2.0) as a [Gaea](https://github.com/xocialize-code/gaea) research plugin. It is built on
+[GaeaPluginKit](https://github.com/xocialize-code/gaea-plugin-kit) over
 [moss-image-swift](https://github.com/xocialize/moss-image-swift) 0.3.0, runs in its own process, and speaks the Gaea
 Plugin Protocol v1. Add it to Gaea by its repo URL:
 
 ```bash
-gaea plugins add https://github.com/xocialize/gaea-plugin-moss-image
+gaea plugins add https://github.com/xocialize-code/gaea-plugin-moss-image
 ```
 
 ## What it offers
@@ -77,7 +77,7 @@ scripts/check-plugin.sh
 MLXEngine's store (`CHECK_MODELS_ROOT` moves it), with every `.build` folder hidden so MLX can find its metallib only
 inside the bundle. A control then shows that the bare worker, outside the bundle, can't. `scripts/release.sh` builds,
 checks, notarizes with the fleet's `mlx-notary` profile, and publishes the GitHub release. See the
-[demo plugin](https://github.com/xocialize/gaea-plugin-demo) for signing, notarization and CI secrets.
+[demo plugin](https://github.com/xocialize-code/gaea-plugin-demo) for signing, notarization and CI secrets.
 
 `moss-inproc` (`swift run -c release moss-inproc`; its header lists the options) is not part of the plugin: it runs
 the same lane in-process through MLXServeEngine and builds the same request as the worker (the library's `snapped`
