@@ -195,7 +195,7 @@ func offerModel(_ model: Model) -> JSONValue {
 
 public let mossPlugin = GaeaPluginDefinition(
     id: "com.xocialize.gaea.moss-image",
-    version: "0.1.1",
+    version: "0.1.2",
     minGaea: "0.2.0",
     team: "CFZS6RXUCP",
     repo: "https://github.com/xocialize-code/gaea-plugin-moss-image",
